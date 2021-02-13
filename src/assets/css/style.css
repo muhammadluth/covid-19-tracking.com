@@ -1,0 +1,199 @@
+.container {
+    padding: 20px;
+    position: relative;
+}
+.title{
+    font-size: 2.1rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.hr { 
+    display: block; height: 1px;
+    border: 0;
+    border-top: 2px solid #000;
+    margin: 1em 0; padding: 0;
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.card-footer{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.card-all-covid-confirmed{
+    background-color: #ff3f34;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: center;
+    transition: transform .2s;
+    text-shadow: 2px 2px 5px #000;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+}
+.card-all-covid-confirmed:hover{
+    transform: scale(1.1);
+}
+
+
+.card-all-covid-recovered{
+    background-color: #0be881;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: center;
+    transition: transform .2s;
+    text-shadow: 2px 2px 5px #000;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+}
+.card-all-covid-recovered:hover{
+    transform: scale(1.1);
+}
+
+.card-all-covid-deaths{
+    background-color: #34495e;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: center;
+    transition: transform .2s;
+    text-shadow: 2px 2px 5px #000;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+}
+
+.card-all-covid-deaths:hover{
+    transform: scale(1.1);
+}
+
+
+.card-country{
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 2rem;
+    transition: transform .2s;
+    text-shadow: 2px 2px -5px #000;
+    box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
+}
+.card-country:hover{
+    transform: scale(1.1);
+}
+
+.loading-content{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.loading-maps{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 5px;
+}
+
+.card-country-body{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-value-confirmed{
+    color: #ff3f34;
+    font-weight: bold;
+}
+.text-value-active{
+    color: #ff3f34;
+    font-weight: bold;
+}
+.text-value-recovered{
+    color: #0be881;
+    font-weight: bold;
+}
+.text-value-deaths{
+    color: #34495e;
+    font-weight: bold;
+}
+
+.card-button-percentage{
+    margin-top: 1rem;
+    background-color: #34495e;
+    color:#fff;
+    font-weight: bold;
+}
+
+.text-subheader{
+    font-size: 0.8rem;
+}
+
+.notification-data-not-found{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.select-country{
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.alert-error{
+    position: fixed;
+    top: 5.5rem;
+    right: 0;
+}
+/* MAPS */
+.map {
+    height: 500px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin-top: 16px;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .map .leaflet-container {
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  .info-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .info-container {
+    width: 150px;
+  }
+  
+  .info-confirmed {
+    display: flex;
+    flex-direction: row;
+  }
+  .info-recovered {
+    display: flex;
+    flex-direction: row;
+  }
+  .info-deaths {
+    display: flex;
+    flex-direction: row;
+  }
+  
