@@ -1,13 +1,16 @@
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const Dotenv = require("dotenv-webpack");
 const path = require("path");
+const PUBLIC_PATH = process.env.PUBLIC_PATH || "/";
 
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "build"),
     filename: "bundle.js",
+    publicPath: PUBLIC_PATH,
   },
   module: {
     rules: [
@@ -59,6 +62,9 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [{ from: "public" }],
+    }),
+    new webpack.DefinePlugin({
+      "process.env.PUBLIC_PATH": JSON.stringify(PUBLIC_PATH),
     }),
   ],
 };
