@@ -1,16 +1,15 @@
 class Footer extends HTMLElement {
+  constructor() {
+    super();
+    this.shadowDOM = this.attachShadow({ mode: "open" });
+  }
 
-    constructor() {
-        super();
-        this.shadowDOM = this.attachShadow({ mode: "open" });
-    }
+  connectedCallback() {
+    this.render();
+  }
 
-    connectedCallback() {
-        this.render();
-    }
-
-    render() {
-        this.shadowDOM.innerHTML = `
+  render() {
+    this.shadowDOM.innerHTML = `
        <style>
            * {
                margin: 0;
@@ -29,8 +28,7 @@ class Footer extends HTMLElement {
                padding: 15px;
            }
        </style>
-       <h4>&copy;2020.Build with <a href="http://github.com/muhammadluth" target="_blank"><strong>Muhammad Luthfi</strong></a></h4>`;
-    }
+       <h4>&copy;Copyright 2020. Built by <a href="http://github.com/muhammadluth" target="_blank"><strong>Muhammad Luthfi</strong></a></h4>`;
+  }
 }
-
 window.customElements.define("footer-bar", Footer);
