@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import "regenerator-runtime";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,3 +16,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root"),
 );
+module.hot.accept();
